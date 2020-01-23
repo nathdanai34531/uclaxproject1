@@ -7,7 +7,7 @@ const Main = () => {
 
 <div class="example">
     
-    <p>Banner Image</p>
+    Banner Image
 
 </div>
 
@@ -39,9 +39,11 @@ const Main = () => {
   <li>  <h2>Blog 3</h2> <h3>Blog 3</h3>
     <p>Descriptions</p> <p>Read</p><p>See more</p></li>
 
-  <li>  <h2>Blog 4</h2> <h3>Blog 4</h3>
-    <p>Descriptions</p> <p>Read</p><p>See more</p></li>
+ 
 </ul>
+
+
+
 
 
 
