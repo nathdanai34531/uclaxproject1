@@ -3,18 +3,32 @@ import './Nav.scss';
 
 const Nav = () => {
     return (
-          <nav className='Nav'>
-              
-            Navigations + Sign up 
-        
-          <p class='navbutton'>Button</p>
+      <nav className='Nav'>
 
-          <p class='logo'>Logo</p>
-      
-      
-      
-      
-          </nav>
+    
+
+      <div className="links">
+          <a href="#">About Us</a>
+          <a href="#">Tours</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+      </div>
+
+      <div className="Menu">
+          <a href="#">Menu</a>
+          
+      </div>
+
+  </nav>
+
+
+
+
+
+
+
+
+
     )
 };
 

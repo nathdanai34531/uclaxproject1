@@ -1,5 +1,28 @@
-.wrapper {
-    width: 1200px;
-    padding: 25px;
+body {
+    background-color: rgb(255, 255, 255)
+}
+
+.App {
+    //width: 800px;
+    min-width: 320;
+    max-width: 1200px;
+    border: solid 2px rgb(255, 255, 255);
+    padding: 20px;
     margin: 25px auto;
+
+   background-color: white;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: rgb(255, 255, 255);
+
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
 }

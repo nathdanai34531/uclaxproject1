@@ -3,27 +3,40 @@ import './Main.scss';
 
 const Main = () => {
     return (
-        <nav className='Main'>
-              
-            <p class='contents'>Contents</p>
+        <main className='Main'>
 
-            <h3>Tour package options</h3>
-            
-            <h3 class='image'>Banner</h3>
-            
-            <p class='button'>Button</p>
+<div class="example">
+    
+    <p>Image</p>
 
-         
+</div>
 
 
 
 
-        </nav>
+<ul class="Tour">
+  <li>  <h2>Tour 1</h2> 
+    <p>Descriptions</p> </li>
+  <li>  <h2>Tour 2</h2>
+    <p>Descriptions</p> </li>
+  <li>  <h2>Tour 3</h2>
+    <p>Descriptions</p></li>
+  <li>  <h2>Tour 4</h2>
+    <p>Descriptions</p> </li>
+</ul>
+
+
+
+
+
+
+
+</main>
+    )
 
 
     
-
-    )
 };
+
 
 export default Main;
