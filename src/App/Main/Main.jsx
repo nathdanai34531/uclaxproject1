@@ -29,7 +29,7 @@ const Main = () => {
 
             <br></br><br></br>
             <hr></hr>
-
+ 
 
             <div className="blogger">
                 <div className="blogtopic"> Blog </div>

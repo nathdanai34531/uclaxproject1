@@ -3,7 +3,7 @@ import './Nav.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+
 
 const Nav = () => {
 
@@ -32,8 +32,8 @@ const Nav = () => {
                 <FontAwesomeIcon icon={faBars} />
             </div>
 
-          
-        
+            
+            
 
             {
                 showMenu &&
@@ -47,8 +47,7 @@ const Nav = () => {
 
             }
 
-           
-
+        
                         
 
         </nav>
