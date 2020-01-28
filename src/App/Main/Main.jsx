@@ -34,12 +34,14 @@ const Main = () => {
             <div className="blogger">
                 <div className="blogtopic"> Blog </div>
 
-                <div className="blog blog2">Blog 1 </div>
+                <div className="blog blog2">Blog 1 </div> 
                 <div className="blog blog3">Blog 2 </div>
                 <div className="blog blog1">Blog 3 </div>
                 <br></br>
                 <hr></hr>
             </div>
+
+
 
 
 
