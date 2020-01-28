@@ -1,47 +1,45 @@
-import React from "react"; 
+import React from 'react';
 import './Main.scss';
 
 const Main = () => {
     return (
         <main className='Main'>
 
-<div class="example">
-    
-    Banner Image
 
-</div>
+            <div className="banner">
+                <div>Banner image</div>
+            </div>
 
+            <div className="featured"> Featured Day Trip </div> <hr></hr>
 
+            <div className="columns">
+                <div className="col col1">Tour 1 </div>
+                <div className="col col2">Tour 2 </div>
+                <div className="col col3">Tour 3 </div>
+                <div className="col col4">Tour 4 </div>
+            </div>
 
-
-<ul class="Tour">
-  <li>  <h2>Tour 1</h2>  
-    <p>Descriptions</p> <p>Price</p><p>See more</p> </li>
-  <li>  <h2>Tour 2</h2>
-    <p>Descriptions</p> <p>Price</p><p>See more</p></li>
-  <li>  <h2>Tour 3</h2>
-    <p>Descriptions</p> <p>Price</p><p>See more</p></li>
-  <li>  <h2>Tour 4</h2>
-    <p>Descriptions</p> <p>Price</p><p>See more</p></li>
-</ul>
-
-
-
+            <div className="columns2">
+                <div className="col col1">Description </div>
+                <div className="col col2">Description </div>
+                <div className="col col3">Description </div>
+                <div className="col col4">Description </div>
+            </div>
 
 
-<ul class="Blog">
-  <li>  <h2>Blog1</h2>  <h3>Blog 1</h3>
-    <p>Descriptions</p> <p>Read more</p> </li>
+            <br></br><br></br>
+            <hr></hr>
 
-  <li>  <h2>Blog2</h2> <h3>Blog 2</h3>
-    <p>Descriptions</p> <p>Read</p><p>See more</p></li>
 
-  <li>  <h2>Blog 3</h2> <h3>Blog 3</h3>
-    <p>Descriptions</p> <p>Read</p><p>See more</p></li>
+            <div className="blogger">
+                <div className="blogtopic"> Blog </div>
 
- 
-</ul>
-
+                <div className="blog blog2">Blog 1 </div>
+                <div className="blog blog3">Blog 2 </div>
+                <div className="blog blog1">Blog 3 </div>
+                <br></br>
+                <hr></hr>
+            </div>
 
 
 
@@ -53,31 +51,9 @@ const Main = () => {
 
 
 
+        </main>
 
-
-
-
-
-</main>
     )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
 };
-
 
 export default Main;

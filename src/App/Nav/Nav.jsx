@@ -1,36 +1,73 @@
-import React from "react"; 
+import React, { useState } from 'react';
 import './Nav.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
 const Nav = () => {
+
+    const [showMenu, updateShowMenu] = useState(true);
+
+
+    const handhamclick = () => {
+        console.log('Youhitham');
+
+        let newShowMenu;
+
+        if (showMenu === true) {
+            newShowMenu = false;
+        } else {
+            newShowMenu = true;
+        }
+
+
+        updateShowMenu(newShowMenu);
+    }
+
     return (
-      <nav className='Nav'>
+        <nav className='Nav'>
 
-    
+            <div className="hamburger" onClick={handhamclick}>
+                <FontAwesomeIcon icon={faBars} />
+            </div>
 
-      <div className="links">
-          <a href="#">About Us</a>
-          <a href="#">Tours</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-      </div>
-
-      <div className="Menu">
-          <a href="#">Menu</a>
           
-      </div>
+        
 
-  </nav>
+            {
+                showMenu &&
+                <div className="links">
+                
+                    <a href="#">About</a>
+                    <a href="#">Tours</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
 
+            }
 
+           
 
+                        
 
-
-
-
-
-
+        </nav>
     )
+
+
 };
 
 export default Nav;
+
+
+
+
+
+
+
+
+
+
+
+
 
