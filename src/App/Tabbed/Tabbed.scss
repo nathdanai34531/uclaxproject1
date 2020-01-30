@@ -1,27 +1,29 @@
 .Tabbed {
-  .tabs {
-    display: flex;
-
-    .tab {
-      background-color: rgb(197, 197, 197);
-      padding: 8px 40px;
-      border-radius: 3px 3px 0px 0px;
-      margin-right: 10px;
+    .tabs{
+        display: flex;
+        .tab {
+            background-color: rgb(172, 172, 172);
+        padding: 10px 30px;
+     border-radius: 3px 3px 0px 0px;
+       margin-right: 10px;
+        
     }
-  }
+}
 
-  
-  .content {
-background-color:rgb(197, 197, 197);
-padding: 20px;
 
-    h2 {
+.content{
+    background-color: rgb(172, 172, 172);
+    padding: 20px;
+    img{}
+    h2{}
+    p{
+height: 250px;
+padding: 10px;
+background-color: cyan;
+
     }
-    
-    p {
-      background-color: coral;
-      height: 250px;
-      padding: 10px;
-    }
-  }
+
+
+}
+
 }
