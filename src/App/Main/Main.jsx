@@ -1,9 +1,13 @@
 import React from 'react';
 import './Main.scss';
+import Tabbed from '../Tabbed/Tabbed.jsx';
+
 
 const Main = () => {
     return (
         <main className='Main'>
+
+            <Tabbed />
 
 
             <div className="banner">
