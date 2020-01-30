@@ -1,19 +1,20 @@
 import React from 'react';
+import './Tabbed.scss';
 
 const Tabbed = () => {
     return (
         <div className={"Tabbed"}>
             <div className="tabs">
-                <div className="tab">About</div>
-                <div className="tab">Mission</div>
-                <div className="tab">Vision</div>
+                <div className="tab">Gallery 1</div>
+                <div className="tab">Gallery 2</div>
+                <div className="tab">Gallery 3</div>
             </div>
        
 
         <div className="content">
 
-            <h2>Title</h2>
-            <p>TEXT GOSE HERE</p>
+            <h2>Gallery 1</h2>
+            <p></p>
         </div>
 
         </div>

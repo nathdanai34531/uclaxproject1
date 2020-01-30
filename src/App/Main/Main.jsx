@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <main className='Main'>
 
-            <Tabbed />
+            
 
 
             <div className="banner">
@@ -31,9 +31,16 @@ const Main = () => {
             </div>
 
 
-            <br></br><br></br>
+            <br></br>
             <hr></hr>
+            <br></br>
+            <br></br><br></br><br></br>
  
+            <Tabbed />
+
+            <br></br><br></br><br></br>
+            <br></br>
+            <hr></hr>
 
             <div className="blogger">
                 <div className="blogtopic"> Blog </div>

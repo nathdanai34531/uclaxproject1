@@ -1,0 +1,30 @@
+.Tabbed{
+    .tabs {
+display: flex;
+
+        .tab {
+            background-color: rgb(197, 197, 197);
+            padding: 10px 20px;
+            border-radius: 5px 5px 0px 0px;
+            margin-right: 10px;
+        
+
+        }
+    }
+
+    .content{
+        background-color:  rgb(197, 197, 197);
+        padding: 20px;
+
+
+        h2 {
+        }
+
+        p{
+            background-color:green;
+            height: 200px;
+        }
+
+
+    }
+}
