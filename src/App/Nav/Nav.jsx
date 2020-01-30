@@ -7,66 +7,43 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
 
+    const [showMenu, updateShowMenu] = useState(false);
 
-    //State
-    const [showMenu, updateShowMenu] = useState(true);
-    const [isSmall, updateIsSmall] = useState(true);
+    //Click Event
+    const handleHamburgerClick = () => {
 
-    //Function/Methods
-    //Hamburger click
-    const handhamclick = () => {
-        console.log('Youhitham');
-
-        let newShowMenu;
-
-        if (showMenu === true) {
-            newShowMenu = false;
+        if (showMenu === false) {
+            updateShowMenu(true);
         } else {
-            newShowMenu = true;
+            updateShowMenu(false);
         }
 
-
-        updateShowMenu(newShowMenu);
     }
 
-
-    //Checking for small view or medium/large.
-    const handleIsSmall = () => {
-
-        console.log('isSmall: ', isSmall);
-
+    //Window Resize Event
+    const handleWindowResize = () => {
         if (window.innerWidth > 599) {
-            updateIsSmall(false);
-            updateShowMenu(true)
-
+            updateShowMenu(true);
         } else {
-            updateIsSmall(true);
             updateShowMenu(false);
         }
     }
 
-    //useEffect says only do this when our Nav mounts for first time. (don't add it infinitely)
+    //When component first mounts
     useEffect(() => {
-        window.addEventListener('resize', handleIsSmall);
-
-        return () => {
-            window.removeEventListener('resize', handleIsSmall)
-            handleIsSmall(); //fire off when page first loads.
-        }
+        window.addEventListener('resize', handleHamburgerClick);
+        handleWindowResize(); 
     }, []);
+
+
 
     return (
         <nav className='Nav'>
+            <div className="hamburger" onClick={handleHamburgerClick}>
 
 
-            {
-                isSmall &&
-                <div className="hamburger" onClick={handhamclick}>
-                    <FontAwesomeIcon icon={faBars} />
-                </div>
-            }
-
-
+                <FontAwesomeIcon icon={faBars} />
+            </div>
 
             {
                 showMenu &&
@@ -77,10 +54,7 @@ const Nav = () => {
                     <a href="#">Blog</a>
                     <a href="#">Contact</a>
                 </div>
-
             }
-
-
 
 
         </nav>

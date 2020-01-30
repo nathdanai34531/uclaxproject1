@@ -67,10 +67,9 @@ font-size: 18px;
 
 @media screen and(min-width: 600px) {
   .Nav {
-    // JavaScript handled this already
-    // .hamburger {
-    //   display: none;
-    // }
+    .hamburger {
+      display: none;
+    }
 
     .links {
       a {
