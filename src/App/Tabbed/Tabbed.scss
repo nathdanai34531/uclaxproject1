@@ -2,10 +2,14 @@
     .tabs{
         display: flex;
         .tab {
-            background-color: rgb(172, 172, 172);
+            background-color: rgb(95, 95, 95);
         padding: 10px 30px;
      border-radius: 3px 3px 0px 0px;
        margin-right: 10px;
+
+       &.active {
+           background-color:rgb(172, 172, 172);
+       }
         
     }
 }
@@ -22,6 +26,8 @@ padding: 10px;
 background-color: cyan;
 
     }
+
+
 
 
 }

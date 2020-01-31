@@ -58,6 +58,10 @@ font-size: 18px;
         transition: all 0.5s;
         background-color: rgb(196, 196, 196);
       }
+
+      &.active{
+        background: tomato;
+      }
     }
   }
 }
