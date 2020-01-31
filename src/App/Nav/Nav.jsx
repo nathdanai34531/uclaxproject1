@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Nav.scss';
+import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -32,7 +33,7 @@ const Nav = () => {
     //When component first mounts
     useEffect(() => {
         window.addEventListener('resize', handleHamburgerClick);
-        handleWindowResize(); 
+        handleWindowResize();
     }, []);
 
 
@@ -48,15 +49,13 @@ const Nav = () => {
             {
                 showMenu &&
                 <div className="links">
-
-                    <a href="#">About</a>
-                    <a href="#">Tours</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <NavLink to='/' exact>Welcome</NavLink>
+                    <NavLink to='/services'>Services</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
                 </div>
+
+
             }
-
-
         </nav>
     )
 
