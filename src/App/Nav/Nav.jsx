@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 const Nav = () => {
@@ -52,10 +53,24 @@ const Nav = () => {
                     <NavLink to='/' exact>Home</NavLink>
                     <NavLink to='/about'>About</NavLink>
                     <NavLink to='/contact'>Contact</NavLink>
+                    <NavLink to='/contact'>Gallery</NavLink>
+
+                    <div className="number">
+                        (818) 538-6287
+                     </div>
+
                 </div>
 
 
             }
+
+
+
+            <nav className='Loginicon'>
+                <FontAwesomeIcon icon={faUser} />
+            </nav>
+
+
         </nav>
     )
 

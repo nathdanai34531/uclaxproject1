@@ -1,35 +1,49 @@
 .Tabbed {
-    .tabs{
-        display: flex;
-        .tab {
-            background-color: rgb(95, 95, 95);
-        padding: 10px 30px;
-     border-radius: 3px 3px 0px 0px;
-       margin-right: 10px;
-
-       &.active {
-           background-color:rgb(172, 172, 172);
-       }
-        
+  .tabs {
+    display: flex;
+    .tab {
+      background-color: rgb(230, 230, 230);
+      padding: 20px 79px;
+      border-radius: 0px 0px 0px 0px;
+      margin-right: 0px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      &.active {
+        background-color: rgb(172, 172, 172);
+        font-weight: 700;
+      }
     }
-}
+  }
 
+  margin: 50px;
+  margin-top: 0px;
 
-.content{
+  .content {
     background-color: rgb(172, 172, 172);
-    padding: 20px;
-    img{}
-    h2{}
-    p{
-height: 250px;
-padding: 10px;
-background-color: cyan;
-
+    // padding: 20px;
+    img {
     }
 
+    h2 {
+      padding: 0px;
+      background-color: rgb(172, 172, 172);
+      font-size: 15px;
+      text-align: center;
+      font-size: 40px;
+      margin-top: 150px;
+      color: white;
+    }
 
-
-
-}
-
+    p {
+      padding: 0px;
+      background-color: rgb(172, 172, 172);
+      font-size: 20px;
+      text-align: center;
+      color: white;
+      height: 150px;
+      
+    }
+  }
 }

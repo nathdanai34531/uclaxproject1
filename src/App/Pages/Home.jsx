@@ -7,12 +7,16 @@ const Home = () => {
         <div className={'Pages Home'}>
             {/* Home */}
 
-            
+
             <div className="banner">
                 <div>Banner image</div>
             </div>
 
-            <div className="featured"> Featured Day Trip </div> <hr></hr>
+            <div className="featured"> Featured Day Trip </div>
+
+            <div className="featureddescript">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab commodi hbjhkol reiciendis animi cumque quae, maxime Lorem ipsum dolor sit  adipisicing elit.  optio praesentium perspiciatis inventore blanditiis aliquam voluptate quisquam itaque commodi dolorum itaque commodi dolorum. 
+            </div>
 
             <div className="columns">
                 <div className="col col1">Tour 1 </div>
@@ -22,15 +26,18 @@ const Home = () => {
             </div>
 
             <div className="columns2">
-                <div className="col col1">Description </div>
-                <div className="col col2">Description </div>
-                <div className="col col3">Description </div>
-                <div className="col col4">Description </div>
+                <div className="col col1">Tour 1 </div>
+                <div className="col col2">Tour 2 </div>
+                <div className="col col3">Tour 3 </div>
+                <div className="col col4">Tour 4 </div>
             </div>
 
 
+
+
+
             <br></br>
-            <hr></hr>
+
             <br></br>
             <br></br><br></br><br></br>
 
@@ -39,18 +46,18 @@ const Home = () => {
 
             <br></br><br></br><br></br>
             <br></br>
-            <hr></hr>
+
 
 
 
             <div className="blogger">
-                <div className="blogtopic"> Blog </div>
+                <div className="blogtopic"> Read Our Blog </div> <hr></hr>
 
-                <div className="blog blog2">Blog 1 </div>
+                <div className="blog blog2">Blog 1 </div> 
                 <div className="blog blog3">Blog 2 </div>
                 <div className="blog blog1">Blog 3 </div>
                 <br></br>
-                <hr></hr>
+
             </div>
 
 
@@ -59,7 +66,7 @@ const Home = () => {
 
 
 
-            
+
         </div>
     );
 }
