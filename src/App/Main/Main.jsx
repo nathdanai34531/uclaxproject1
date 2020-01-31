@@ -3,8 +3,8 @@ import './Main.scss';
 import { Switch, Route } from 'react-router-dom';
 
 
-import Welcome from '../Pages/Welcome.jsx';
-import Services from '../Pages/Services.jsx';
+import Home from '../Pages/Home.jsx';
+import About from '../Pages/About.jsx';
 import Contact from '../Pages/Contact.jsx';
 
 
@@ -14,14 +14,14 @@ const Main = () => {
     return (
         <main className='Main'>
             <Switch>
-                <Route path='/services'>
-                    <Services />
+                <Route path='/about'>
+                    <About />
                 </Route>
                 <Route path='/contact'>
                     <Contact />
                 </Route>
                 <Route path='/'>
-                    <Welcome />
+                    <Home />
                 </Route>
             </Switch>
         </main>

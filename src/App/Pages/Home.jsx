@@ -1,11 +1,11 @@
 import React from 'react';
 import './Pages.scss';
-import Tabbed from '../Tabbed/Tabbed.jsx';
+import Tabbed from '../Tabbed/Tabbed.jsx.jsx';
 
-const Welcome = () => {
+const Home = () => {
     return (
-        <div className={'Pages Welcome'}>
-            Welcome
+        <div className={'Pages Home'}>
+            {/* Home */}
 
             
             <div className="banner">
@@ -64,4 +64,4 @@ const Welcome = () => {
     );
 }
 
-export default Welcome;
+export default Home;

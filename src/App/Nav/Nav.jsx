@@ -49,8 +49,8 @@ const Nav = () => {
             {
                 showMenu &&
                 <div className="links">
-                    <NavLink to='/' exact>Welcome</NavLink>
-                    <NavLink to='/services'>Services</NavLink>
+                    <NavLink to='/' exact>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
                     <NavLink to='/contact'>Contact</NavLink>
                 </div>
 

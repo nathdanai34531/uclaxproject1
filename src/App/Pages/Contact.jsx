@@ -5,7 +5,7 @@ import './Pages.scss';
 const Contact = () => {
     return (
         <div className={'Pages Contact'}>
-            Contact
+            {/* Contact */}
         </div>
     );
 }

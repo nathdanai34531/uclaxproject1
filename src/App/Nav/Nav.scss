@@ -52,15 +52,16 @@ font-size: 18px;
 
       //border: solid 5px rgb(136, 184, 255);
 
-      transition: all 1s;
+      transition: all 0s;
 
       &:hover {
-        transition: all 0.5s;
+        transition: all 0s;
         background-color: rgb(196, 196, 196);
       }
 
+      // Nav menu active color
       &.active{
-        background: tomato;
+        background: rgb(212, 212, 212);
       }
     }
   }
