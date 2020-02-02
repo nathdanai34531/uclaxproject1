@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 const Nav = () => {
@@ -67,7 +67,7 @@ const Nav = () => {
 
 
             <nav className='Loginicon'>
-                <FontAwesomeIcon icon={faUser} />
+                <FontAwesomeIcon icon={faUserCircle} />
             </nav>
 
 
