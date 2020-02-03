@@ -27,7 +27,6 @@
   }
 
   .featured {
-
     text-align: center;
 
     margin: 20px;
@@ -37,7 +36,6 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
       "Helvetica Neue", sans-serif;
     font-weight: 800;
-  
   }
 
   .featureddescript {
@@ -48,8 +46,6 @@
       "Helvetica Neue", sans-serif;
     font-weight: 250;
   }
-
-
 
   .aboutandmission {
     text-align: left;
@@ -73,24 +69,17 @@
     font-weight: 250;
   }
 
-
   //Main Sub
   .columns {
- 
     margin-top: 30px;
     margin-bottom: 10px;
     margin-left: 40px;
     margin-right: 40px;
- 
 
-  
-  
     justify-content: space-between;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-
-   
 
     .col {
       width: 300px;
@@ -98,9 +87,19 @@
       line-height: 180px;
       margin: 10px;
       padding: 5px;
+      
+      &:hover {
+        background-color: rgb(66, 66, 66);
+        cursor: pointer;
+  
+        transition: all 0.2s ease-in-out;
+  
+        transform: scale(1.1);
+        overflow: hidden; 
 
-
-     
+      
+        
+      }
     }
     .col1 {
       background-color: rgb(172, 172, 172);
@@ -114,43 +113,38 @@
     .col4 {
       background-color: rgb(172, 172, 172);
     }
+
+    
   }
 
+  .columnstext {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
+  .Reasons {
+    text-align: center;
 
+    margin: 25px;
+    margin-top: 40px;
 
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 800;
+  }
 
- .columnstext{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   
- }
-  
+  .Reasonstext {
+    text-align: center;
+    padding: 0px 350px 0px;
+    margin-bottom: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 250;
+  }
 
-.Reasons{
-  text-align: center;
-
-  margin: 25px;
-  margin-top: 40px;
-
-  font-size: 40px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
-  font-weight: 800;
-}
-
-.Reasonstext {
-  text-align: center;
-  padding: 0px 350px 0px;
-  margin-bottom: 15px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
-  font-weight: 250;
-}
-
-.routeicon{
-  
+  .routeicon {
     display: inline-block;
 
     width: 85px;
@@ -159,7 +153,7 @@
     position: absolute;
     right: 900px;
     top: 2340px;
-    color:  rgb(0, 0, 0);
+    color:  rgb(131, 131, 131);
 
     svg {
       width: 100%;
@@ -169,84 +163,76 @@
     &:hover {
       color: rgb(0, 0, 0);
       cursor: pointer;
+
+      transition: all 0.2s ease-in-out;
+
+      transform: scale(1.1);
     }
-  
-}
-
-.timeicon{
-  
-  display: inline-block;
-
-  width: 60px;
-  height: 110px;
-
-  position: absolute;
-  right: 685px;
-  top: 2345px;
-  color: rgb(131, 131, 131);
-
-  svg {
-    width: 100%;
-    height: auto;
   }
 
-  &:hover {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+  .timeicon {
+    display: inline-block;
+
+    width: 60px;
+    height: 110px;
+
+    position: absolute;
+    right: 685px;
+    top: 2345px;
+    color: rgb(131, 131, 131);
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+
+      transition: all 0.2s ease-in-out;
+
+      transform: scale(1.1);
+    }
   }
 
-}
+  .moneyicon {
+    display: inline-block;
 
-.moneyicon{
-  
-  display: inline-block;
+    width: 85px;
+    height: 110px;
 
-  width: 85px;
-  height: 110px;
+    position: absolute;
+    right: 460px;
+    top: 2350px;
+    color: rgb(131, 131, 131);
 
-  position: absolute;
-  right: 460px;
-  top: 2350px;
-  color: rgb(131, 131, 131);
+    svg {
+      width: 100%;
+      height: auto;
+    }
 
-  svg {
-    width: 100%;
-    height: auto;
+    &:hover {
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+
+      transition: all 0.2s ease-in-out;
+
+      transform: scale(1.1);
+    }
   }
-
-  &:hover {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-  }
-
 }
 
-}
-
-
-
-
-
-
-
-
-
- .blogging {
- 
+.blogging {
   margin-top: 30px;
   margin-bottom: 10px;
   margin-left: 40px;
   margin-right: 40px;
 
-
-
-
   justify-content: space-between;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-
- 
 
   .bol {
     width: 410px;
@@ -254,9 +240,6 @@
     line-height: 150px;
     margin: 10px;
     padding: 5px;
-
-
-   
   }
   .bol1 {
     background-color: rgb(172, 172, 172);
@@ -272,10 +255,7 @@
   }
 }
 
-
-
-
-.contacthead{
+.contacthead {
   text-align: center;
 
   margin: 20px;
@@ -296,24 +276,16 @@
   font-weight: 250;
 }
 
-
-
 .contactform {
- 
   margin-top: 30px;
   margin-bottom: 10px;
   margin-left: 40px;
   margin-right: 40px;
 
-
-
-
   justify-content: space-around;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-
- 
 
   .cont {
     width: 600px;
@@ -326,23 +298,7 @@
   .cont1 {
     background-color: rgb(172, 172, 172);
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //MQR
 //medium screen
@@ -351,8 +307,6 @@
     .featureddescript {
       display: none;
     }
-
-   
   }
 }
 
@@ -362,9 +316,5 @@
     .featureddescript {
       display: inline-block;
     }
-
-  
-
-   
   }
 }
