@@ -32,7 +32,7 @@ const Home = () => {
 
 
 
-            <div className="columns">
+            <div className="columns2">
                 <div className="col col1">Tour 5 </div>
                 <div className="col col2">Tour 6 </div>
                 <div className="col col3">Tour 7 </div>
@@ -48,30 +48,31 @@ const Home = () => {
                 About and Mission</div>
 
             <div className="aboutandmissiondescript">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab commodi holkol reiciendis animi cumque quae, maxime manna te dolor sit  adipisicing elit.  optio praesentium perspiciatis inventore blanditiis aliquam voluptate quisquam itaque commodi dolorum itaque commodi dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab commodi holkol reiciendis animi cumque quae, maxime manna te dolor sit  adipisicing elit.  optio praesentium perspiciatis inventore blanditiis aliquam voluptate quisquam.
             </div>
 
 
 
 
-            <br></br><br></br>        <br></br>
+            <br></br><br></br>
 
 
             <Tabbed />
 
-            <br></br><br></br>
-
+          
+            <br></br> <br></br><br></br><br></br><br></br>
 
 
             <div className="Reasons">
                 Reasons To Discover L.A. With Us. </div>
 
-                <div className="Reasonstext">
+
+            <div className="Reasonstext">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab commodi holkol reiciendis animi cumque quae, maxime manna te dolor sit  adipisicing elit.  optio praesentium perspiciatis inventore blanditiis aliquam voluptate quisquam itaque commodi dolorum itaque commodi dolorum.
  </div>
 
-            
- <br></br><br></br>     <br></br><br></br><br></br><br></br>     <br></br><br></br>
+            <br></br><br></br><br></br><br></br> <br></br><br></br><br></br><br></br>
+            <br></br><br></br> <br></br><br></br>  <br></br><br></br>    <br></br><br></br><br></br><br></br>     <br></br><br></br>
 
             <div className="aboutandmission">
                 Must Do In L.A.</div>
@@ -80,9 +81,9 @@ const Home = () => {
                 <div className="bol bol1">Blog 1 </div>
                 <div className="bol bol2">Blog 2 </div>
                 <div className="bol bol3">Blog 3 </div>
-                <div className="bol bol3">Blog 4 </div>
-                <div className="bol bol3">Blog 5 </div>
-                <div className="bol bol3">Blog 6 </div>
+                <div className="bol bol4">Blog 4 </div>
+                <div className="bol bol5">Blog 5 </div>
+                <div className="bol bol6">Blog 6 </div>
             </div>
 
             <br></br><br></br>     <br></br><br></br>
@@ -101,13 +102,13 @@ const Home = () => {
             </nav>
 
 
-
+            <br></br><br></br>
 
             <div className="contacthead">
                 Let's Talk! </div>
 
-                <div className="contacttext">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <div className="contacttext">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
  </div>
 
             <div className="contactform">
@@ -122,7 +123,7 @@ const Home = () => {
 
 
 
-           
+
         </div>
     );
 }

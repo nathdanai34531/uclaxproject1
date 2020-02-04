@@ -87,18 +87,15 @@
       line-height: 180px;
       margin: 10px;
       padding: 5px;
-      
+
       &:hover {
         background-color: rgb(66, 66, 66);
         cursor: pointer;
-  
-        transition: all 0.2s ease-in-out;
-  
-        transform: scale(1.1);
-        overflow: hidden; 
 
-      
-        
+        transition: all 0.2s ease-in-out;
+
+        transform: scale(1.1);
+        overflow: hidden;
       }
     }
     .col1 {
@@ -113,8 +110,48 @@
     .col4 {
       background-color: rgb(172, 172, 172);
     }
+  }
 
-    
+  .columns2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .col {
+      width: 300px;
+      height: 190px;
+      line-height: 180px;
+      margin: 10px;
+      padding: 5px;
+
+      &:hover {
+        background-color: rgb(66, 66, 66);
+        cursor: pointer;
+
+        transition: all 0.2s ease-in-out;
+
+        transform: scale(1.1);
+        overflow: hidden;
+      }
+    }
+    .col1 {
+      background-color: rgb(172, 172, 172);
+    }
+    .col2 {
+      background-color: rgb(172, 172, 172);
+    }
+    .col3 {
+      background-color: rgb(172, 172, 172);
+    }
+    .col4 {
+      background-color: rgb(172, 172, 172);
+    }
   }
 
   .columnstext {
@@ -153,7 +190,7 @@
     position: absolute;
     right: 900px;
     top: 2340px;
-    color:  rgb(131, 131, 131);
+    color: rgb(131, 131, 131);
 
     svg {
       width: 100%;
@@ -253,6 +290,12 @@
   .bol4 {
     background-color: rgb(172, 172, 172);
   }
+  .bol5 {
+    background-color: rgb(172, 172, 172);
+  }
+  .bol6 {
+    background-color: rgb(172, 172, 172);
+  }
 }
 
 .contacthead {
@@ -315,6 +358,85 @@
   .Main {
     .featureddescript {
       display: inline-block;
+    }
+
+  }
+}
+
+//large screen Max
+@media screen and (max-width: 1000px) {
+  .Main {
+    .featureddescript {
+      display: none;
+    }
+
+    .aboutandmissiondescript {
+      display: none;
+    }
+    .contacttext{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .Main {
+    .routeicon {
+      display: none;
+    }
+
+    .timeicon {
+      display: none;
+    }
+
+    .moneyicon {
+      display: none;
+    }
+  }
+}
+
+//Large
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 1120px) {
+  .aboutandmissiondescript {
+    display: none;
+  }
+
+  .Reasonstext {
+    display: none;
+  }
+
+  .bol4 {
+    display: none;
+  }
+
+  .bol5 {
+    display: none;
+  }
+
+  .bol6 {
+    display: none;
+  }
+}
+
+//large screen Max
+@media screen and (max-width: 600px) {
+  .Main {
+    .featureddescript {
+      display: none;
+    }
+
+    .columns {
+      padding: 0px;
+      margin: 0px;
+      justify-content: center;
+    }
+
+    .columns2 {
+      display: none;
     }
   }
 }

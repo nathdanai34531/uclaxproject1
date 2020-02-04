@@ -52,13 +52,11 @@ const Nav = () => {
                 <div className="links">
                     <NavLink to='/' exact>Home</NavLink>
                     <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/tours'>Tours</NavLink>
+                    <NavLink to='/blog'>Blog</NavLink>
                     <NavLink to='/contact'>Contact</NavLink>
-                    <NavLink to='/contact'>Gallery</NavLink>
 
-                    <div className="number">
-                        (818) 538-6287
-                     </div>
-
+                
                 </div>
 
 
