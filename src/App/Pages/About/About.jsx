@@ -3,6 +3,7 @@ import '../Pages.scss';
 import Staff from '../Staff/Staff.jsx';
 
 
+
 const About = () => {
     return (
         <div className={'Pages About'}>
