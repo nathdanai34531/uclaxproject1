@@ -25,33 +25,25 @@
   margin: 50px;
   margin-top: 0px;
 
-  .content {
-    background-color: rgb(172, 172, 172);
-    // padding: 20px;
+
     
-    img {
-    }
-
-    h2 {
-      padding: 0px;
-      background-color: rgb(172, 172, 172);
-      font-size: 15px;
-      text-align: center;
-      font-size: 40px;
-      margin-top: 150px;
-      color: white;
-    }
-
-    p {
-      padding: 0px;
-      background-color: rgb(172, 172, 172);
-      font-size: 20px;
-      text-align: center;
-      color: white;
-      height: 110px;
+.content{
+  justify-content: center;
+  display: flex;
+    img{   
+      width: 1345px;
+      height: 400px;
+      display: flex;
+      object-fit: cover;
       
+    
     }
-  }
+  
+    h2{display: none;}
+    p{display: none;}
+
+
+}
 }
 
 

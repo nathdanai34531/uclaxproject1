@@ -5,28 +5,28 @@ import './Tabbed.scss';
 //Arrays
 const tabItems = [
     {
-
+        image: '/img/GalleryTab/picone.jpg',
         title: 'Gallery 1',
         text: 'First gallery',
 
     },
 
     {
-
+        image: '/img/GalleryTab/pictwo.jpg',
         title: 'Gallery 2',
         text: 'Second gallery',
 
     },
 
     {
-
+        image: '/img/GalleryTab/picthree.jpg',
         title: 'Gallery 3',
         text: 'Third gallery',
 
     },
 
     {
-
+        image: '/img/GalleryTab/picfour.jpg',
         title: 'Gallery 4',
         text: 'Fourth gallery',
 
