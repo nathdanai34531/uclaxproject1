@@ -49,12 +49,12 @@ const Tabbed = () => {
     return (
         <div className={'Tabbed'}>
 
-<div className="content">
-            
-            <img src={currentTab.image} />
-            <h2>{currentTab.title}</h2>
-            <p>{currentTab.text}</p>
-        </div>
+            <div className="content">
+
+                <img src={currentTab.image} alt={currentTab.title} />
+                <h2>{currentTab.title}</h2>
+                <p>{currentTab.text}</p>
+            </div>
 
 
 
@@ -67,7 +67,7 @@ const Tabbed = () => {
                 <div onClick={() => { setCurrentTab(tabItems[3]) }} className={isG4}>Gallery 4</div>
             </div>
 
-          
+
         </div>
     )
 

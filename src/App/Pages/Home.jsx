@@ -1,6 +1,6 @@
 import React from 'react';
 import './Pages.scss';
-import Tabbed from '../Tabbed/Tabbed.jsx.jsx';
+import Tabbed from '../Tabbed/Tabbed.jsx';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRoute } from '@fortawesome/free-solid-svg-icons';

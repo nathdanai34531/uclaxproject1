@@ -40,10 +40,13 @@ const Nav = () => {
 
 
     return (
+
+
         <nav className='Nav'>
+
+
+
             <div className="hamburger" onClick={handleHamburgerClick}>
-
-
                 <FontAwesomeIcon icon={faBars} />
             </div>
 
@@ -55,12 +58,10 @@ const Nav = () => {
                     <NavLink to='/tours'>Tours</NavLink>
                     <NavLink to='/blog'>Blog</NavLink>
                     <NavLink to='/contact'>Contact</NavLink>
-
-                
                 </div>
-
-
             }
+
+
 
 
 
@@ -69,7 +70,11 @@ const Nav = () => {
             </nav>
 
 
+
+
+
         </nav>
+
     )
 
 
