@@ -22,18 +22,20 @@ const Nav = () => {
 
     }
 
-    //Window Resize Event
-    const handleWindowResize = () => {
-        if (window.innerWidth > 599) {
-            updateShowMenu(true);
-        } else {
-            updateShowMenu(false);
-        }
-    }
-
     //When component first mounts
     useEffect(() => {
-        window.addEventListener('resize', handleHamburgerClick);
+
+        //Window Resize Event
+        const handleWindowResize = () => {
+            if (window.innerWidth > 599) {
+                updateShowMenu(true);
+            } else {
+                updateShowMenu(false);
+            }
+        }
+
+
+        window.addEventListener('resize', handleWindowResize);
         handleWindowResize();
     }, []);
 

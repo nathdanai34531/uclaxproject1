@@ -1,5 +1,6 @@
 .Nav {
   background: rgb(255, 255, 255);
+
   padding: 0px;
   font-size: 14px;
   margin-top: 40px;
@@ -26,9 +27,6 @@
     }
   }
 
-
-
-
   .links {
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -36,7 +34,7 @@
       "Helvetica Neue", sans-serif;
 
     a {
-      background-color: rgb(255, 255, 255);
+     
       color: rgb(0, 0, 0);
 
       display: block;
@@ -52,12 +50,21 @@
 
       &:hover {
         transition: all 0.2s;
-        background-color: rgb(218, 218, 218);
+
+        color: rgb(0, 0, 167);
+        cursor: pointer;
+
+       
+
+        transform: scale(1.1);
       }
 
       // Nav menu active color
       &.active {
-        background: rgb(212, 212, 212);
+        color: rgb(0, 0, 167);
+        font-size: 20px;
+        font-weight: 900;
+        transition: all 0.2s;
       }
     }
   }
