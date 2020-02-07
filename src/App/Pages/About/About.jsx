@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Pages.scss';
-import Staff from '../Staff/Staff.jsx';
+import Staff from './Staff/Staff.jsx';
 
 
 
