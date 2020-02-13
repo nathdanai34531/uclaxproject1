@@ -5,7 +5,7 @@ import './Address.scss';
 const Address = () => {
     return(
         <div className={'Address'}>
-            {/* Address */}
+            Address
         </div>
     );
 }

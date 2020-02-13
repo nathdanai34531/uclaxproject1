@@ -11,33 +11,33 @@ const Contact = () => {
     return (
 
 
-    
+
 
         <div className={'Pages Contact'}>
 
-<div className="contacthead">
-            Let's Talk! </div>
+            <div className="contacthead">
+                Contact Us </div>
 
-        <div className="contacttext">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </div>
+            <div className="contacttext">
+                {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. */}
+            </div>
 
-
-        <div className="contactform">
-            <div className="cont cont1">Contact Form</div>
-        </div>
-
-<br/><br/><br/>
+            <br />
 
             <div className='row row1'>
-                <div className="column column1">
-                    <Address />
-                </div>
 
                 <div className="column column2">
                     <ContactForm />
                 </div>
-            </div> 
+
+                <div className="column column1">
+                    <Address />
+                </div>
+
+
+            </div>
+
+            <br /><br /><br />
 
             <div className='row row2'>
                 <GoogleMap />
