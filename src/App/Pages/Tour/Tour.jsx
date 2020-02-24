@@ -1,10 +1,15 @@
-import React from 'react';
-
-
+import React, { useState, useEffect } from 'react';
 import './Tour.scss';
 import { tourLists } from './tour.js';
 
+
+
+
 const TourLists = () => {
+
+   
+
+
     return tourLists.map((tourLists, idx) => {
         return (
             <div key={idx} className={'TourList'}>
