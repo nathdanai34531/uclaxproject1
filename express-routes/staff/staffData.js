@@ -1,23 +1,23 @@
 module.exports = [
     {
         image: '/img/Staff/staff-1.jpeg',
-        name: 'Hayk',
+        name: 'Tommy',
     },
     {
         image: '/img/Staff/staff-2.jpeg',
-        name: 'Andy',
+        name: 'Jake',
     },
     {
         image: '/img/Staff/staff-3.jpeg',
-        name: 'Jen',
+        name: 'Earl',
     },
     {
         image: '/img/Staff/staff-4.jpeg',
-        name: 'Drew',
+        name: 'Sam',
     },
     {
         image: '/img/Staff/staff-5.jpeg',
-        name: 'Beth',
+        name: 'Cathy',
     },
     {
         image: '/img/Staff/staff-6.jpeg',

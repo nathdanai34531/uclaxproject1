@@ -3,6 +3,8 @@ import './Staff.scss';
 // import { staffMembers } from './staff.js';
 import API from '../../../common/API.js';
 
+
+
 const StaffMembers = () => {
 
     //1. Set up state to keep track of data from server
