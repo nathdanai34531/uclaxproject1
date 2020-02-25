@@ -4,7 +4,7 @@
 
   &.form-invalid{
     border: solid 2px grey;
-    background-color: rgb(250, 135, 154);
+    background-color: rgb(184, 184, 184);
   }
 
   .error-message{
@@ -18,7 +18,7 @@
     margin-bottom: 20px;
 
     .left {
-      border: solid 1px purple;
+      border: solid 1px rgb(0, 0, 0);
       font-weight: bold;
       font-size: 20px;
       padding: 10px;
