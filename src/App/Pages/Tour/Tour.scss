@@ -1,70 +1,41 @@
-.Tour {
-  background-color: rgb(236, 236, 236);
-  margin: 0px 0px;
-  padding: 20px;
+.Services {
+  background-color: rgb(243, 243, 243);
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-  .TourList {
-    width: 310px;
-    margin: 0px;
-    padding: 15px;
-    font-size: 13px;
-    img {
-      width: 310px;
-      height: 200px;
-    }
-    display: inline-block;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h2{
+    text-align: center;
+    padding: 20px;
     
+  }
 
-    &:hover {
-      color: rgb(0, 0, 0);
-      cursor: pointer;
+  .Service {
 
-      transition: all 0.3s ease-in-out;
 
-      transform: scale(1.1);
+    img {
+      display: block;
+      width: 300px;
+      margin: 10px;
+      height: 200px;
+
+      
     }
-
     h3 {
-      padding: 5px;
-      margin: 0px;
-      background-color: white;
-      font-weight: 500;
+    
+      display: block;
+      width: 300px;
+      margin: 10px;
+      font-size: 18px;
+   
+   
     }
+
+   
   }
-
-  .ourtours {
-    text-align: center;
-
-    margin: 30px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-
-    font-size: 40px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-      "Helvetica Neue", sans-serif;
-    font-weight: 800;
-  }
-
-  .tourdescript {
-    text-align: center;
-    padding: 0px 350px 0px;
-    margin-bottom: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-      "Helvetica Neue", sans-serif;
-    font-weight: 250;
-  }
-
 }
-
-  //large screen Max
-  @media screen and (max-width: 1200px) {
-    .Tour {
-      .tourdescript {
-        display: none;
-      }
-    }
-  }
-

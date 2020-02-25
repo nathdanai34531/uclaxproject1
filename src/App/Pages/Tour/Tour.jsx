@@ -1,43 +1,44 @@
 import React, { useState, useEffect } from 'react';
+import '../Pages.scss';
 import './Tour.scss';
-import { tourLists } from './tour.js';
+// import { timbuktuArray } from './servicesArray.js';
+import API from '../../common/API.js';
+
+const ServicesList = () => {
+
+    // 1. Set Up State to keep track of data from server
+    const [timbuktuArray, setTimbuktuArray] = useState([ ]);
+
+    // Only do this on mount.
+    useEffect(() => {
+        // 2. Retrieve the data from the server
+        API.get('services/gallery').then((result) => {
+            // 3. Update timbuktuArray with data from server
+            console.log('Services Server Response', result);
+            setTimbuktuArray(result.data);
+        });
+    }, [ ]);
 
 
-
-
-const TourLists = () => {
-
-   
-
-
-    return tourLists.map((tourLists, idx) => {
+    return timbuktuArray.map((singleService, idx) => {
         return (
-            <div key={idx} className={'TourList'}>
-                <img src={tourLists.img} alt={tourLists.name} />
-                <h3>{tourLists.name}</h3>
+            <div className='Service'>
+                <img src={ singleService.image } alt={ singleService.title } />
+                <h3>{ singleService.title }</h3>
             </div>
         );
     });
-
 }
 
-const Tour = () => {
+const Services = () => {
     return (
-        <div className='Tour'>
-            <h3 className='ourtours'>Our Tours</h3>
-
-            <div className="tourdescript">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab commodi hbjhkol reiciendis animi cumque quae, maxime manna te dolor sit  adipisicing elit.  optio praesentium perspiciatis inventore blanditiis aliquam voluptate quisquam itaque commodi dolorum itaque commodi dolorum.
+        <div className={ 'Pages Services' }>
+            <h2>Our Tours</h2>
+            <div className="container">
+                <ServicesList />
             </div>
-
-            <br/>
-
-            <TourLists />
         </div>
-    )
+    );
 }
 
-
-
-
-export default Tour;
+export default Services;
