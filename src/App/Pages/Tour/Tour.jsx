@@ -1,13 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import '../Pages.scss';
+
 import './Tour.scss';
 // import { timbuktuArray } from './servicesArray.js';
 import API from '../../common/API.js';
 
-const ServicesList = () => {
+import Service from './TourLb.jsx';
+
+const ServicesList = (props) => {
+
+
+    // const turnLightOn = () => {
+    //     console.log('Turning ON');
+    // }
+
+    // const turnLightOff = () => {
+    //     console.log('Turning OFF');
+    // }
+
 
     // 1. Set Up State to keep track of data from server
-    const [timbuktuArray, setTimbuktuArray] = useState([ ]);
+    const [timbuktuArray, setTimbuktuArray] = useState([]);
 
     // Only do this on mount.
     useEffect(() => {
@@ -17,23 +30,20 @@ const ServicesList = () => {
             console.log('Services Server Response', result);
             setTimbuktuArray(result.data);
         });
-    }, [ ]);
+    }, []);
 
 
     return timbuktuArray.map((singleService, idx) => {
         return (
-            <div className='Service'>
-                <img src={ singleService.image } alt={ singleService.title } />
-                <h3>{ singleService.title }</h3>
-            </div>
+            <Service key={ idx } singleService={singleService} />
         );
     });
 }
 
 const Services = () => {
     return (
-        <div className={ 'Pages Services' }>
-            <h2>Our Tours</h2>
+        <div className={'Pages Services'}>
+            <h2>Tour Services</h2>
             <div className="container">
                 <ServicesList />
             </div>
