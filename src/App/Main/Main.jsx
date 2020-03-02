@@ -3,10 +3,10 @@ import './Main.scss';
 import { Switch, Route } from 'react-router-dom';
 
 
-import Home from '../Pages/Home.jsx';
+import Home from '../Pages/Home/Home.jsx';
 import About from '../Pages/About/About.jsx';
 import Contact from '../Pages/Contact/Contact.jsx';
-import Tour from '../Pages/Tour/Tour.jsx';
+import Services from '../Pages/Services/Services.jsx';
 import Blog from '../Pages/Blog.jsx';
 
 
@@ -29,8 +29,8 @@ const Main = () => {
                     <Blog />
                 </Route>
 
-                <Route path='/tour'>
-                    <Tour />
+                <Route path='/services'>
+                    <Services />
                 </Route>
                 
                 <Route path='/'>

@@ -1,21 +1,19 @@
 import React from 'react';
-import './Pages.scss';
-import Tabbed from '../Tabbed/Tabbed.jsx';
+import '../Pages.scss';
+import Tabbed from './Tabbed/Tabbed.jsx';
+import Slideshow from './Slideshow/Slideshow';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRoute } from '@fortawesome/free-solid-svg-icons';
-import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
-import { faMoneyBillWave } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faRoute } from '@fortawesome/free-solid-svg-icons';
+// import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
+// import { faMoneyBillWave } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     return (
         <div className={'Pages Home'}>
-            {/* Home */}
+         <Slideshow />
 
-
-            <div className="banner">
-                <div>Banner image</div>
-            </div>
+        
 
             <div className="featured"> Featured Day Trip </div>
 
@@ -88,7 +86,7 @@ const Home = () => {
 
             <br></br><br></br>     <br></br><br></br>
 
-
+{/* 
             <nav className='routeicon'>
                 <FontAwesomeIcon icon={faRoute} />
             </nav>
@@ -99,7 +97,7 @@ const Home = () => {
 
             <nav className='moneyicon'>
                 <FontAwesomeIcon icon={faMoneyBillWave} />
-            </nav>
+            </nav> */}
 
 
             <br></br><br></br>
