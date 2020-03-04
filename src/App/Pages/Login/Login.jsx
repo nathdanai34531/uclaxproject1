@@ -1,18 +1,18 @@
-import React, { useRef, useState } from 'react';
-import './ContactForm.scss';
-import { emailCheck } from '../../../common/utilities.js';
+import React, {useRef, useState} from 'react';
+import './Login.scss';
+import { emailCheck } from '../../common/utilities.js';
 import classnames from 'classnames';
 import keycode from 'keycode';
-import API from '../../../common/API.js';
+import API from '../../common/API.js';
 
-const ContactForm = () => {
-    //State
-    const [emailIsValid, updateEmailIsValid] = useState(true);
-    const [formIsValid, updateFormIsValid] = useState(false);
-    const [errors, updateErrorsArray] = useState([]);
-    
-    const emailRef = useRef();
-    const messageRef = useRef();
+const Login = () => {
+//State
+const [emailIsValid, updateEmailIsValid] = useState(true);
+const [formIsValid, updateFormIsValid] = useState(false);
+const [errors, updateErrorsArray] = useState([]);
+
+const emailRef = useRef();
+const messageRef = useRef();
 
 const handleFormSubmit = () => {
     console.log('You clicked me');
@@ -22,19 +22,19 @@ const handleFormSubmit = () => {
     //Validate the user fill in the form.
     if (emailRef.current.value.length < 4) {
         errorMessages.push({
-            message: 'You forgot to fill out the Email field',
+            message: 'Please enter your email address',
         })
     }
 
     if (!emailCheck(emailRef.current.value)) {
         errorMessages.push({
-            message: 'The email you provided is invalid',
+            message: 'Invalid email address',
         })
     }
 
     if (messageRef.current.value.length < 1) {
         errorMessages.push({
-            message: 'You forgot to fill out the Message field',
+            message: 'Please enter your password',
         })
     }
 
@@ -97,10 +97,10 @@ const handleKeyDown = (event) => {
 }
 
 
-// const theClassName = (formIsValid) ? 'ContactForm form-valid' : 'ContactForm form-invalid';
+// const theClassName = (formIsValid) ? 'Login form-valid' : 'Login form-invalid';
 
 const theClassName = classnames({
-    'ContactForm': true,
+    'Login': true,
     'form-valid': formIsValid,
     'form-invalid': !formIsValid,
 });
@@ -111,7 +111,7 @@ return (
         {
             errors.length > 0 &&
             <div className="error-message">
-                Error message goes here.
+                {/* Error message goes here. */}
             <ul>
                     {displayErrors()}
                 </ul>
@@ -136,10 +136,10 @@ return (
         </div>
         <div className="form-group">
             <div className="left">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Password</label>
             </div>
             <div className="right">
-                <textarea ref={messageRef} name="message" id="message" placeholder='Your message goes here...' />
+                <input ref={messageRef} name="message" id="message" placeholder='.....' />
             </div>
         </div>
         <div className="form-group">
@@ -149,7 +149,7 @@ return (
                     tab-index={0}
                     onClick={handleFormSubmit}
                     onKeyDown={handleKeyDown}
-                >Send Email</button>
+                >Login</button>
             </div>
         </div>
 
@@ -158,5 +158,5 @@ return (
 
 );
     }
-
-export default ContactForm;
+        
+export default Login;
