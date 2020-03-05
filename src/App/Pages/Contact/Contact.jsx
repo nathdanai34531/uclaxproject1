@@ -19,10 +19,9 @@ const Contact = () => {
                 Contact Us </div>
 
             <div className="contacttext">
-                {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. */}
-            </div>
+            Submitting this form is the easiest way to contact us about any questions you may have. Your question will be directed to a team member who will best be able to answer your questions.           </div>
 
-            <br />
+            <br /> <br></br> 
 
             <div className='row row1'>
 
