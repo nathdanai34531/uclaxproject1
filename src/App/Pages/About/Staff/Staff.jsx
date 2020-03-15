@@ -36,7 +36,7 @@ const StaffMembers = () => {
 const Staff = () => {
     return (
         <div className='Staff'>
-            <h3 className='ourstaffs'>Our Staffs</h3>
+            <h3 className='ourstaffs'>Staffs At ACE DECO</h3>
 
             <StaffMembers />
         </div>

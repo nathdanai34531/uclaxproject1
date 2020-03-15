@@ -2,7 +2,6 @@ import React from 'react';
 import '../Pages.scss';
 import Tabbed from './Tabbed/Tabbed.jsx';
 import Slideshow from './Slideshow/Slideshow';
-import Services from '../Services/Services.jsx';
 import Contact from '../Contact/Contact.jsx';
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,35 +18,12 @@ const Home = () => {
 
             <br></br> <br></br><br></br><br></br><br></br>
 
-            <div className="featured"> A Day In LA Tours </div>
+            <div className="featured"> Design Agency </div>
 
 
             <div className="featureddescript">
                 Are you planning to visit LA, or did you just arrive in town? Are you an LA native who has simply never had the time to see the city’s many sights? Whether you’re a tourist or a resident, our Los Angeles tour company will give you the chance to experience the City of Angels like never before.    </div>
-            <br></br>    <br></br>
-            <br></br> <br></br><br></br><br></br><br></br>
-            <div className='toursinhome'>
-            <Services />
-            </div>
-
-
-
-            {/* <div className="columns">
-                <div className="col col1">Tour 1 </div>
-                <div className="col col2">Tour 2 </div>
-                <div className="col col3">Tour 3 </div>
-                <div className="col col4">Tour 4 </div>
-            </div>
-
-
-
-            <div className="columns2">
-                <div className="col col1">Tour 5 </div>
-                <div className="col col2">Tour 6 </div>
-                <div className="col col3">Tour 7 </div>
-                <div className="col col4">Tour 8 </div>
-            </div>
- */}
+  
 
 
 <br></br><br></br>

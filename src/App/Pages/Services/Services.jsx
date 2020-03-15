@@ -29,7 +29,7 @@ const Services = () => {
 
     return (
         <div className={'Pages Services'}>
-            <h2>Tour Services</h2>
+            <h2>Our Design Services</h2>
             <Categories
                 categories={categories}
                 currCat={currCat}
